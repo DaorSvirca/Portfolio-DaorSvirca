@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Daor Svirca | Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="dark">
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar" id="sidebar" aria-label="Sidebar Navigation">
+      <div class="sidebar-header">
+        <h1 class="logo">Daor Svirca</h1>
+        <button
+          id="sidebarClose"
+          class="sidebar-close-btn"
+          aria-label="Close Sidebar"
+        >
+          &times;
+        </button>
+      </div>
+      <ul class="sidebar-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="sidebar-buttons">
+        <!-- Accent Color Picker -->
+        <div class="color-picker-wrapper">
+          <button
+            id="colorPickerToggle"
+            class="btn-nav"
+            aria-label="Choose Accent Color"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <i data-feather="droplet"></i>
+          </button>
+          <div
+            class="color-picker-dropdown"
+            aria-label="Choose Accent Color"
+            aria-hidden="true"
+          >
+            <button
+              class="color-btn"
+              data-color="#4b9ce2"
+              style="background: linear-gradient(45deg, #4b9ce2, #3f8fd0)"
+              title="Blue"
+            ></button>
+            <button
+              class="color-btn"
+              data-color="#e74c3c"
+              style="background: linear-gradient(45deg, #e74c3c, #c0392b)"
+              title="Red"
+            ></button>
+            <button
+              class="color-btn"
+              data-color="#27ae60"
+              style="background: linear-gradient(45deg, #27ae60, #1e8449)"
+              title="Green"
+            ></button>
+          </div>
+        </div>
+
+        <!-- Theme Toggle -->
+        <button
+          id="themeToggle"
+          class="btn-nav"
+          aria-label="Toggle Dark/Light Theme"
+        >
+          <i data-feather="moon"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hamburger Button -->
+    <button
+      id="hamburger"
+      class="hamburger"
+      aria-label="Open Menu"
+      tabindex="0"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Hero Section -->
+    <header class="hero" id="hero">
+      <div class="animated-background"></div>
+      <div class="container hero-content">
+        <div class="hero-text animate-text">
+          <h1>
+            Hello, I'm <span id="typed-text"></span><span class="cursor"></span>
+          </h1>
+          <p>Software Developer</p>
+          <a href="#contact" class="btn">Get in Touch</a>
+        </div>
+        <div class="hero-photo home-img animate-photo">
+          <img src="images/Daori_BG.png" alt="Daor Svirca Photo" />
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          Passionate Computer Sciences student, specializing in Web and Mobile
+          Development. Collaborative, a valuable team member, with a will to
+          learn and enhance professional skills.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+              alt="HTML5 Logo"
+              class="skill-icon"
+            />
+            <span>HTML5</span>
+          </div>
+          <div class="skill-card">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
+              alt="CSS3 Logo"
+              class="skill-icon"
+            />
+            <span>CSS3</span>
+          </div>
+          <div class="skill-card">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+              alt="JavaScript Logo"
+              class="skill-icon"
+            />
+            <span>JavaScript</span>
+          </div>
+          <div class="skill-card">
+            <img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
+              alt="Java Logo"
+              class="skill-icon"
+            />
+            <span>Java</span>
+          </div>
+          <div class="skill-card">
+            <img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original.svg"
+              alt="Spring Boot Logo"
+              class="skill-icon"
+            />
+            <span>Spring Boot</span>
+          </div>
+          <div class="skill-card">
+            <img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/microsoftsqlserver/microsoftsqlserver-plain.svg"
+              alt="MSSQL Logo"
+              class="skill-icon"
+            />
+            <span>MSSQL</span>
+          </div>
+          <div class="skill-card">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/d/dd/MySQL_logo.svg"
+              alt="MySQL"
+              class="skill-icon"
+            />
+            <span>MySQL</span>
+          </div>
+          <div class="skill-card">
+            <img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg"
+              alt="PostgreSQL Logo"
+              class="skill-icon"
+            />
+            <span>PostgreSQL</span>
+          </div>
+          <div class="skill-card">
+            <img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original.svg"
+              alt="Android Logo"
+              class="skill-icon"
+            />
+            <span>Android</span>
+          </div>
+          <div class="skill-card">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg"
+              alt="Swift Logo"
+              class="skill-icon"
+            />
+            <span>Swift</span>
+          </div>
+          <div class="skill-card">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg"
+              alt="Vue.js Logo"
+              class="skill-icon"
+            />
+            <span>Vue.js</span>
+          </div>
+          <div class="skill-card">
+            <img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
+              alt="Python Logo"
+              class="skill-icon"
+            />
+            <span>Python</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <h3>E-commerce clothing</h3>
+            <p>
+              Developed a static website using HTML and CSS to demonstrate the
+              layout, design, content structure about E-commerce clothing. The
+              project showcases responsive design practices, organized content
+              sections, and a clean user interface.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://github.com/DaorSvirca/E-Commerce-Web.git"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub</a
+              >
+            </div>
+          </div>
+
+          <div class="project-card">
+            <h3>Music Web Application</h3>
+            <p>
+              Built a responsive and dynamic web application for music using
+              HTML, CSS, JavaScript, and Bootstrap. Instead of using a database,
+              it uses local storage for saving music records. It supports
+              adding, updating or deleting each music – or in bulk. Also,
+              demonstrated integration of a third-party API and offered a
+              real-time content rendering using Bootstrap Cards.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://github.com/DaorSvirca/Music-Web-Application.git"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub</a
+              >
+            </div>
+          </div>
+
+          <div class="project-card">
+            <h3>School System Management- SEMS</h3>
+            <p>
+              Developed a school management system using Spring Boot (Java) for
+              the back-end, Next.js for the front-end, and PostgreSQL as main
+              database. Implemented CRUD operations on each module, including
+              students, teachers/professors, classes, semesters and more. Used
+              Role-Based access control through entire platform
+            </p>
+            <div class="project-links">
+              <a
+                href="https://github.com/DaorSvirca/School-system-managment-sems.git"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub</a
+              >
+            </div>
+          </div>
+
+          <div class="project-card">
+            <h3>Event Management</h3>
+            <p>
+              Developed an event management system using Spring Boot (Java) for
+              the back-end, Vue.js for the front-end, and PostgreSQL as main
+              database. Integrated flyway for tracking and automating changes to
+              SQL-based schemas throughout the development process. Implemented
+              CRUD operations on each module, including users, events, tickets,
+              venues, and more. Used Token-Based authentication. Implemented
+              role and permission-based authorization using Spring Security.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://github.com/eltonismaili/Event-Management.git "
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub(Back-end)</a
+              >
+              <a
+                href=" https://github.com/eltonismaili/event-managment-vue.git"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub (Front-end)</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <ul class="contact-list">
+        <li>
+          <a
+            href="https://www.linkedin.com/in/daor-svirca-3b00032a4/"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              width="20"
+              height="20"
+              aria-hidden="true"
+            >
+              <path
+                d="M4.98 3.5C4.98 4.88 3.9 6 2.5 6S0 4.88 0 3.5 1.08 1 2.5 1 4.98 2.12 4.98 3.5zM.2 8h4.6v12H.2zM8.5 8h4.4v1.7h.06c.61-1.16 2.11-2.4 4.35-2.4 4.65 0 5.5 3.06 5.5 7.04V20h-4.6v-6.05c0-1.44-.03-3.3-2-3.3-2 0-2.3 1.56-2.3 3.18V20H8.5z"
+              />
+            </svg>
+            LinkedIn
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWsTHqCbCQXbzTkclpGNNQdXRVtpltMHlCwRTnxRpKPhdXLzWkxHqKdWZCnSbqLgzrFJbmKZb"
+            aria-label="Email"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              width="20"
+              height="20"
+              aria-hidden="true"
+            >
+              <path
+                d="M2 4a2 2 0 012-2h16a2 2 0 012 2v16a2 2 0 01-2 2H4a2 2 0 01-2-2V4zm18 2l-8 5-8-5V18h16V6z"
+              />
+            </svg>
+            Email
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://github.com/DaorSvirca"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              width="20"
+              height="20"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12 0a12 12 0 00-3.79 23.4c.6.11.82-.26.82-.58v-2.17c-3.34.73-4.04-1.6-4.04-1.6a3.18 3.18 0 00-1.34-1.76c-1.1-.75.09-.74.09-.74a2.52 2.52 0 011.83 1.24 2.54 2.54 0 003.47 1 2.54 2.54 0 01.76-1.6c-2.67-.3-5.47-1.33-5.47-5.92a4.64 4.64 0 011.24-3.22 4.31 4.31 0 01.12-3.17s1-.32 3.3 1.23a11.3 11.3 0 016 0c2.3-1.55 3.3-1.23 3.3-1.23a4.31 4.31 0 01.12 3.17 4.63 4.63 0 011.24 3.22c0 4.6-2.8 5.62-5.48 5.92a2.85 2.85 0 01.82 2.2v3.26c0 .32.22.7.83.58A12 12 0 0012 0z"
+              />
+            </svg>
+            GitHub
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Daor Svirca. All rights reserved.</p>
+    </footer>
+
+    <!-- JS -->
+    <script>
+      feather.replace();
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
