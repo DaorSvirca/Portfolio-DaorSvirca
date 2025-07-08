@@ -102,15 +102,10 @@ document.addEventListener("DOMContentLoaded", () => {
   // Color picker toggle
   colorPickerToggle.addEventListener("click", () => {
     const expanded = colorPickerToggle.getAttribute("aria-expanded") === "true";
-    if (expanded) {
-      colorPickerDropdown.classList.remove("show");
-      colorPickerToggle.setAttribute("aria-expanded", "false");
-      colorPickerDropdown.setAttribute("aria-hidden", "true");
-    } else {
-      colorPickerDropdown.classList.add("show");
-      colorPickerToggle.setAttribute("aria-expanded", "true");
-      colorPickerDropdown.setAttribute("aria-hidden", "false");
-    }
+    colorPickerDropdown.classList.toggle("show", !expanded);
+    colorPickerToggle.setAttribute("aria-expanded", !expanded);
+    colorPickerDropdown.setAttribute("aria-hidden", expanded);
+
   });
 
   // Change accent color only (NOT text color)
